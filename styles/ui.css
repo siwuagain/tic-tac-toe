@@ -78,7 +78,7 @@ button:not(#go-back-btn):hover {
 }
 
 #go-back-btn {
-  border: black solid;
+  border: none;
   background-color: transparent;
   position: absolute;
   font-size: 1rem;
