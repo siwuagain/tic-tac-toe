@@ -6,24 +6,64 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <script src="ttt.js" defer></script>
-  <link rel="stylesheet" href="styles/ttt.css">
+  <link rel="stylesheet" href="styles/board.css">
+  <link rel="stylesheet" href="styles/ui.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
 </head>
 <body>
+  
+  <h1 id="title">Tic-Tac-Toe</h1>
 
-  <div>
-    <button id="vs-player-btn">Player vs Player</button>
+  <div id="game-settings-container">
+
+    <div id="go-back-container"></div>
+
+    <div id="game-settings">
+
+      <div id="choose-player-type">
+        <button id="vs-player-btn">Player vs Player</button>
+        <button id="vs-bot-btn">Player vs Bot</button>
+      </div>
+
+      <div id="choose-difficulty">
+        <button id="beginner-btn">Beginner</button>
+        <button id="intermediate-btn">Intermediate</button>
+        <button id="expert-btn">Expert</button>
+      </div>
+      
+      <div id="choose-order">
+        <button id="start-first-btn">Start First</button>
+        <button id="start-second-btn">Start Second</button>
+      </div>
+      
+    </div>
   </div>
 
-  <div id="gameboard">
-   <div class="square"></div>
-   <div class="square"></div>
-   <div class="square"></div>
-   <div class="square"></div>
-   <div class="square"></div>
-   <div class="square"></div>
-   <div class="square"></div>
-   <div class="square"></div>
-   <div class="square"></div>
+  <div id="gameboardcontainer">
+
+    <div id="playerboard">
+      <div id="player-1">Player 1: X <br></div>
+      <div id="player-2">Player 2: O <br></div>
+    </div>
+
+    <div id="gameboard">
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      </div>
   </div>
+
+  <div id="restart-display">
+    <button id="restart-btn">Restart?</button>
+  </div>
+    
 </body>
 </html>
